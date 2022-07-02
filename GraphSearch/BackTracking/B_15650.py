@@ -1,6 +1,6 @@
 N,M=map(int,input().split())
 s=[]
-f=[]
+
 def dfs(n,s):
     if len(s)==M:
         print(' '.join(map(str, s)))
@@ -12,5 +12,6 @@ def dfs(n,s):
             n+=1
             dfs(n,s)
             s.pop()
+
 n=1       
 dfs(n,s)
