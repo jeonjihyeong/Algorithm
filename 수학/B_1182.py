@@ -9,7 +9,7 @@ def DFS(idx,sum_n):
 
     sum_n+=arr[idx]
     if sum_n == S:
-        cnt+=1
+        cnt+=10
         
     
     

@@ -10,6 +10,7 @@ def dfs(n,s):
         if i not in s:
             s.append(i)
             n+=1
+            
             dfs(n,s)
             s.pop()
 

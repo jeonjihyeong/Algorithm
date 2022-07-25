@@ -17,7 +17,7 @@ def solution (money):
     dp2[1]=money[1]
     for i in range(2, n):
         dp2[i]=max(dp2[i-1],dp2[i-2]+money[i])
-    answer=max(dp1[-1],dp2[-1])
+    answer=max(dp1[-2],dp2[-1])
     return answer
 
 solution(money)

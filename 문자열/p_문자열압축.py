@@ -19,15 +19,9 @@ def solution(s):
         if cnt==1:
             a+=tmp
         else: a+=str(cnt)+tmp
-        string_zip.append(a)
+        string_zip.append(len(a))
     
     result= min(string_zip)
-    print(len(result))
-
-
-    
-
     return result
 
 solution(s)
-
