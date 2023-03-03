@@ -5,8 +5,8 @@ def solution(n, plans, clients):
         ser.append(' ')    
         for j in range(plans[i]):
             if plans[i][j]==' ':
-                while plans[i][j+1]
-                ser[i].append(plans[i][j+1])
+                while plans[i][j+1]:
+                    ser[i].append(plans[i][j+1])
     print(plans[1][2])
     return answer
 
