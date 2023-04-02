@@ -9,7 +9,7 @@ def heapify(li, idx, n):
     if(r<=n and li[s_idx] > li[r]):
         s_idx = r
     if s_idx != idx:
-        li[idx], li[s_idx] = li[s_idx], li[idx]
+        module.swapListNumber(li,idx,s_idx)
         return heapify(li, s_idx, n)
 
 def heap_sort(v):
@@ -20,10 +20,8 @@ def heap_sort(v):
     
     for i in range(n, 0, -1):
         print(v[1])
-        v[i], v[1] = v[1], v[i]
+        module.swapListNumber(v,i,1)
         heapify(v, 1, i-1)
 
 randomNumber=module.randomNumberGenerator(20)
-print(randomNumber)
-print(module.swapNumber(1,3))
 heap_sort(randomNumber)
