@@ -1,7 +1,8 @@
 import random
+import module
 
 # 랜덤한 정수 20개 생성
-random_list = [random.randint(1, 100) for i in range(20)]
+randomNumber=module.randomNumberGenerator(20)
 
 # Bubble Sort
 def bubble_sort(arr):
@@ -11,7 +12,7 @@ def bubble_sort(arr):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-bubble_sorted = random_list.copy()
+bubble_sorted = randomNumber.copy()
 bubble_sort(bubble_sorted)
 print("Bubble Sort:", bubble_sorted)
 
@@ -23,7 +24,7 @@ def insertion_sort(arr):
             arr[j], arr[j - 1] = arr[j - 1], arr[j]
             j -= 1
 
-insertion_sorted = random_list.copy()
+insertion_sorted = randomNumber.copy()
 insertion_sort(insertion_sorted)
 print("Insertion Sort:", insertion_sorted)
 
@@ -36,7 +37,7 @@ def selection_sort(arr):
                 min_idx = j
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-selection_sorted = random_list.copy()
+selection_sorted = randomNumber.copy()
 selection_sort(selection_sorted)
 print("Selection Sort:", selection_sorted)
 
@@ -71,6 +72,6 @@ def merge_sort(arr):
             j += 1
             k += 1
 
-merge_sorted = random_list.copy()
+merge_sorted = randomNumber.copy()
 merge_sort(merge_sorted)
 print("Merge Sort:", merge_sorted)
